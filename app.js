@@ -40,6 +40,7 @@
     examTimer: document.getElementById('examTimer'),
     timerDisplay: document.getElementById('timerDisplay'),
     flagBtn: document.getElementById('flagBtn'),
+    shuffleOptionsBtn: document.getElementById('shuffleOptionsBtn'),
     
     // Question Card
     qNumberBadge: document.getElementById('qNumberBadge'),
@@ -586,6 +587,35 @@
     elements.drawerBackdrop.classList.remove('active');
   }
 
+  // Shuffle options of all questions
+  function shuffleAllOptions() {
+    questionsData.forEach(q => {
+      const letters = ['A', 'B', 'C', 'D'];
+      const currentCorrectText = q.options[q.correct];
+      const allTexts = letters.map(l => q.options[l]).filter(Boolean);
+      
+      for (let i = allTexts.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [allTexts[i], allTexts[j]] = [allTexts[j], allTexts[i]];
+      }
+
+      letters.forEach((l, idx) => {
+        q.options[l] = allTexts[idx];
+        if (allTexts[idx] === currentCorrectText) {
+          q.correct = l;
+        }
+      });
+    });
+
+    playTone('click');
+    renderQuestion(state.currentIndex);
+    if (state.mode === 'review') {
+      const activeFilterBtn = document.querySelector('.filter-buttons .filter-btn.active');
+      const filterType = activeFilterBtn ? activeFilterBtn.dataset.filter : 'all';
+      renderAllQuestions(filterType, elements.reviewSearchInput.value);
+    }
+  }
+
   // Setup Event Listeners
   function setupEvents() {
     // Theme toggle
@@ -633,6 +663,12 @@
 
     elements.clearChoiceBtn.addEventListener('click', clearCurrentChoice);
     elements.flagBtn.addEventListener('click', toggleFlag);
+    if (elements.shuffleOptionsBtn) {
+      elements.shuffleOptionsBtn.addEventListener('click', () => {
+        shuffleAllOptions();
+        alert('تم خلط أماكن الإجابات عشوائياً لكافة الأسئلة! 🔀');
+      });
+    }
     elements.submitExamBtn.addEventListener('click', () => {
       const answeredCount = Object.keys(state.answers).length;
       const total = questionsData.length;
@@ -693,6 +729,7 @@
       state.answers = {};
       state.isExamSubmitted = false;
       saveStateToStorage();
+      shuffleAllOptions();
       switchMode('exam');
       renderQuestion(0);
     });
