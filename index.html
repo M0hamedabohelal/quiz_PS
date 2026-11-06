@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>كويز Problem Solving and Decision Making (CS413)</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="theme-light">
+  <div class="app-container">
+    <!-- Top Header -->
+    <header class="app-header">
+      <div class="header-main">
+        <div class="logo-area">
+          <div class="badge-icon">🧠</div>
+          <div>
+            <h1 class="course-title">CS413 — Problem Solving & Decision Making</h1>
+            <p class="course-subtitle">بنك الأسئلة التفاعلي الشامل (50 سؤال - Lectures 1 & 2) مع الشرح وموضع السلايد</p>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <button id="themeToggleBtn" class="btn-icon" title="تبديل الوضع الليلي / الفاتح" aria-label="Toggle theme">
+            <span class="icon">🌙</span>
+          </button>
+          <button id="soundToggleBtn" class="btn-icon" title="كتم / تشغيل المؤثرات الصوتية" aria-label="Toggle sound">
+            <span class="icon">🔊</span>
+          </button>
+          <button id="navDrawerBtn" class="btn-secondary nav-trigger-btn">
+            <span>قائمة الأسئلة (50)</span>
+            <span class="badge-counter" id="answeredCountBadge">0/50</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mode Selector Tabs -->
+      <nav class="mode-tabs">
+        <button class="mode-tab active" data-mode="study">
+          <span class="tab-icon">📖</span>
+          <span class="tab-text">وضع التدريب والشرح الفوري</span>
+        </button>
+        <button class="mode-tab" data-mode="exam">
+          <span class="tab-icon">⏱️</span>
+          <span class="tab-text">وضع الاختبار التجريبي (Exam)</span>
+        </button>
+        <button class="mode-tab" data-mode="review">
+          <span class="tab-icon">📑</span>
+          <span class="tab-text">استعراض كافة الأسئلة (50)</span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Main Content Layout -->
+    <div class="main-layout">
+      <!-- Main Quiz View Area -->
+      <main class="quiz-main-view">
+        
+        <!-- Top Toolbar: Progress, Timer, Flags -->
+        <div class="quiz-toolbar">
+          <div class="progress-wrap">
+            <div class="progress-label">
+              <span id="questionProgressText">السؤال 1 من 50</span>
+              <span id="progressPercentage">2%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" id="progressBarFill" style="width: 2%;"></div>
+            </div>
+          </div>
+
+          <div class="toolbar-side">
+            <div id="examTimer" class="timer-box" style="display: none;">
+              <span class="timer-icon">⏳</span>
+              <span id="timerDisplay">45:00</span>
+            </div>
+            
+            <button id="flagBtn" class="btn-flag" title="وضع علامة مراجعة على السؤال">
+              <span class="flag-icon">🚩</span>
+              <span class="flag-text">تحديد للمراجعة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Single Question Card Container -->
+        <div id="questionViewContainer" class="question-view">
+          <div class="question-card" id="questionCard">
+            <!-- Question Header -->
+            <div class="card-header">
+              <span class="q-badge" id="qNumberBadge">Question 1</span>
+              <div class="q-badges-group">
+                <span class="source-tag-pill" id="qSourceMini">PDF p. 1 — Slide 2</span>
+              </div>
+            </div>
+
+            <!-- Question Body -->
+            <div class="card-body">
+              <h2 class="question-text" id="questionText">Loading question...</h2>
+
+              <!-- Options Grid / List -->
+              <div class="options-grid" id="optionsContainer">
+                <!-- Dynamically populated via JS -->
+              </div>
+            </div>
+
+            <!-- Feedback & Explanation Box (Study Mode / Post-answer) -->
+            <div class="explanation-box" id="explanationBox" style="display: none;">
+              <div class="exp-header">
+                <span class="exp-status-icon" id="expStatusIcon">✅</span>
+                <span class="exp-title" id="expTitle">إجابة صحيحة!</span>
+              </div>
+              <div class="exp-content">
+                <div class="exp-row">
+                  <span class="exp-label">💡 سبب الإجابة (Why?):</span>
+                  <p class="exp-text" id="expWhyText"></p>
+                </div>
+                <div class="exp-row source-row">
+                  <span class="exp-label">📌 المصدر من المحاضرة:</span>
+                  <span class="exp-source" id="expSourceText"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question Footer / Actions -->
+            <div class="card-footer">
+              <button id="prevBtn" class="btn-nav" disabled>
+                <span>السابق</span>
+                <span class="arrow">→</span>
+              </button>
+
+              <div class="footer-center">
+                <button id="clearChoiceBtn" class="btn-text">مسح الاختيار</button>
+                <button id="submitExamBtn" class="btn-finish" style="display: none;">إنهاء الاختبار والتصحيح</button>
+              </div>
+
+              <button id="nextBtn" class="btn-nav btn-primary">
+                <span class="arrow">←</span>
+                <span>التالي</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- All Questions List View (Review Mode) -->
+        <div id="allQuestionsContainer" class="all-questions-view" style="display: none;">
+          <div class="review-controls">
+            <input type="text" id="reviewSearchInput" class="search-input" placeholder="🔍 ابحث في الأسئلة أو المفاهيم (e.g. STRIPS, Gemba, 5 Whys)...">
+            <div class="filter-buttons">
+              <button class="filter-btn active" data-filter="all">الكل (50)</button>
+              <button class="filter-btn" data-filter="p1">محاضرة 1 (Lec 1)</button>
+              <button class="filter-btn" data-filter="p2">محاضرة 2 (Lec 2)</button>
+            </div>
+          </div>
+          <div id="reviewCardsList" class="review-cards-list">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <!-- Exam Results Modal / Screen -->
+        <div id="resultsViewContainer" class="results-view" style="display: none;">
+          <div class="results-card">
+            <div class="results-hero">
+              <div class="score-circle">
+                <span class="score-val" id="resultScorePct">0%</span>
+                <span class="score-caption" id="resultGradeText">ممتاز</span>
+              </div>
+              <h2 class="results-title">ملخص نتيجة الاختبار التجريبي</h2>
+              <p class="results-sub" id="resultSummaryText">أجبت على 0 من 50 بشكل صحيح</p>
+            </div>
+
+            <div class="stats-grid">
+              <div class="stat-box correct">
+                <span class="stat-num" id="statCorrect">0</span>
+                <span class="stat-name">صحيحة ✅</span>
+              </div>
+              <div class="stat-box incorrect">
+                <span class="stat-num" id="statIncorrect">0</span>
+                <span class="stat-name">خاطئة ❌</span>
+              </div>
+              <div class="stat-box skipped">
+                <span class="stat-num" id="statSkipped">0</span>
+                <span class="stat-name">متروكة ⚠️</span>
+              </div>
+              <div class="stat-box time">
+                <span class="stat-num" id="statTimeSpent">00:00</span>
+                <span class="stat-name">الوقت المستغرق ⏱️</span>
+              </div>
+            </div>
+
+            <div class="results-actions">
+              <button id="reviewExamMistakesBtn" class="btn-secondary">
+                <span>🔍 مراجعة الإجابات الخاطئة مع الشرح</span>
+              </button>
+              <button id="retakeExamBtn" class="btn-primary">
+                <span>🔄 إعادة الاختبار من جديد</span>
+              </button>
+              <button id="backToStudyBtn" class="btn-outline">
+                <span>📖 العودة لوضع التدريب</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Sidebar / Drawer: 50 Questions Navigator Palette -->
+      <aside class="questions-drawer" id="questionsDrawer">
+        <div class="drawer-header">
+          <h3>فهرس الأسئلة (50)</h3>
+          <button id="closeDrawerBtn" class="btn-close" aria-label="Close drawer">×</button>
+        </div>
+
+        <div class="drawer-legend">
+          <span class="legend-item"><span class="dot correct"></span> صحيحة</span>
+          <span class="legend-item"><span class="dot wrong"></span> خاطئة</span>
+          <span class="legend-item"><span class="dot flagged"></span> للمراجعة</span>
+          <span class="legend-item"><span class="dot current"></span> الحالية</span>
+        </div>
+
+        <div class="drawer-filters">
+          <button class="nav-filter-btn active" data-navfilter="all">الكل</button>
+          <button class="nav-filter-btn" data-navfilter="flagged">المميزة 🚩</button>
+          <button class="nav-filter-btn" data-navfilter="wrong">الخاطئة ❌</button>
+          <button class="nav-filter-btn" data-navfilter="unanswered">المتبقية</button>
+        </div>
+
+        <div class="palette-grid" id="questionPaletteGrid">
+          <!-- 50 buttons generated dynamically -->
+        </div>
+
+        <div class="drawer-footer">
+          <button id="resetAllProgressBtn" class="btn-reset">إعادة تصفير الإجابات</button>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Backdrop for Mobile Drawer -->
+    <div id="drawerBackdrop" class="drawer-backdrop"></div>
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
