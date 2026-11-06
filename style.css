@@ -1061,7 +1061,7 @@ body {
   background: var(--bg-subtle);
 }
 
-/* Responsive */
+/* Responsive Styles */
 @media (max-width: 900px) {
   .main-layout {
     grid-template-columns: 1fr;
@@ -1072,6 +1072,7 @@ body {
     top: 0;
     right: -360px;
     width: 320px;
+    max-width: 85vw;
     height: 100vh;
     max-height: 100vh;
     z-index: 1000;
@@ -1094,7 +1095,8 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(2px);
     z-index: 999;
   }
 
@@ -1109,18 +1111,121 @@ body {
 
 @media (max-width: 600px) {
   .app-container {
-    padding: 8px;
+    padding: 10px;
   }
   .app-header {
-    padding: 14px;
+    padding: 16px;
+    margin-bottom: 14px;
+  }
+  .course-title {
+    font-size: 1.15rem;
+  }
+  .course-subtitle {
+    font-size: 0.82rem;
+  }
+  .badge-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 1.6rem;
   }
   .question-card {
-    padding: 18px;
+    padding: 18px 16px;
+    gap: 18px;
   }
   .question-text {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+    line-height: 1.45;
+  }
+  .option-item {
+    padding: 12px 14px;
+    gap: 10px;
+  }
+  .option-letter {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
   }
   .option-text {
     font-size: 0.95rem;
+  }
+  .explanation-box {
+    padding: 14px 16px;
+  }
+  .exp-title {
+    font-size: 1rem;
+  }
+  .exp-text {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-main {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .header-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .nav-trigger-btn {
+    flex: 1;
+    justify-content: center;
+  }
+  .quiz-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    padding: 12px 14px;
+  }
+  .toolbar-side {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .card-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .card-footer .btn-nav {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 14px;
+    font-size: 0.95rem;
+  }
+  .footer-center {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    order: -1;
+    margin-bottom: 4px;
+  }
+  .footer-center .btn-finish {
+    width: 100%;
+  }
+  .score-circle {
+    width: 115px;
+    height: 115px;
+  }
+  .score-val {
+    font-size: 1.85rem;
+  }
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .stat-box {
+    padding: 12px 8px;
+  }
+  .stat-num {
+    font-size: 1.3rem;
+  }
+  .results-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .results-actions button {
+    width: 100%;
   }
 }
