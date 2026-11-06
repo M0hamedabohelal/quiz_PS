@@ -9,7 +9,8 @@ const questionsData = [
       D: "A final report describing the solution"
     },
     correct: "B",
-    explanation: "It clearly describes the issue or gap and defines the need for an effective solution and action.",
+    explanation_en: "It clearly describes the issue or gap and defines the need for an effective solution and action.",
+    explanation_ar: "توضح صياغة المشكلة (Problem Statement) الفجوة أو التحدي بدقة، وتحدد ماهية المشكلة والحاجة الماسة لاتخاذ إجراء ووضع حل فعال لها.",
     source: "PDF p. 1 — Slide 2"
   },
   {
@@ -22,7 +23,8 @@ const questionsData = [
       D: "The personal opinions of the team"
     },
     correct: "B",
-    explanation: "A good statement clearly explains the issue and why it needs attention.",
+    explanation_en: "A good statement clearly explains the issue and why it needs attention.",
+    explanation_ar: "صياغة المشكلة الجيدة تشرح بوضوح طبيعة المشكلة أو التحدي، وتوضح أسباب وجوب الاهتمام بها والتعامل معها.",
     source: "PDF p. 2 — Slide 3"
   },
   {
@@ -35,7 +37,8 @@ const questionsData = [
       D: "Vague, general, and solution-focused"
     },
     correct: "B",
-    explanation: "The slide says the challenge should be defined in a simple, specific, and objective way.",
+    explanation_en: "The slide says the challenge should be defined in a simple, specific, and objective way.",
+    explanation_ar: "تنص السلايدات على أن صياغة المشكلة يجب أن تتميز بأن تكون بسيطة، محددة، وموضوعية غير منحازة (Simple, Specific, and Objective).",
     source: "PDF p. 2 — Slide 3"
   },
   {
@@ -48,7 +51,8 @@ const questionsData = [
       D: "Why is solving it important?"
     },
     correct: "C",
-    explanation: "The five questions are Who, What, Where, When, and Why; cost is not one of them.",
+    explanation_en: "The five questions are Who, What, Where, When, and Why; cost is not one of them.",
+    explanation_ar: "الأسئلة الخمسة (5 Ws) لصياغة المشكلة هي: من، ماذا، أين، متى، ولماذا (Who, What, Where, When, Why)؛ وتكلفة الحل ليست واحدة منها.",
     source: "PDF p. 2 — Slide 3"
   },
   {
@@ -61,7 +65,8 @@ const questionsData = [
       D: "They replace the need for project goals"
     },
     correct: "C",
-    explanation: "Clarifying focus means understanding the issue deeply and avoiding symptom-only treatment.",
+    explanation_en: "Clarifying focus means understanding the issue deeply and avoiding symptom-only treatment.",
+    explanation_ar: "توضيح التركيز يساعد فرق العمل على فهم جوهر المشكلة الحقيقية بعمق، وتجنب الانشغال بعلاج الأعراض السطحية بدلاً من الأسباب الجذرية.",
     source: "PDF p. 3 — Slide 4"
   },
   {
@@ -74,7 +79,8 @@ const questionsData = [
       D: "By removing the need for documentation"
     },
     correct: "B",
-    explanation: "A clear statement aligns the involved people on the problem and its importance.",
+    explanation_en: "A clear statement aligns the involved people on the problem and its importance.",
+    explanation_ar: "الصياغة الواضحة للمشكلة تعزز التواصل من خلال توحيد رؤية أصحاب المصلحة، وأعضاء الفريق، والداعمين حول ما يتم حله وسبب أهميته.",
     source: "PDF p. 3 — Slide 4"
   },
   {
@@ -87,7 +93,8 @@ const questionsData = [
       D: "Describe benefits → select tools → identify symptoms → stop"
     },
     correct: "B",
-    explanation: "This is the five-step sequence shown in the slide diagram.",
+    explanation_en: "This is the five-step sequence shown in the slide diagram.",
+    explanation_ar: "هذا هو الترتيب الصحيح الموضح في مخطط السلايد: تحديد المشكلة ← وضعها في سياقها ← إيجاد السبب الجذري ← وصف النتيجة المثالية ← اقتراح الحل وتوضيح الفوائد.",
     source: "PDF p. 4 — Slide 5"
   },
   {
@@ -100,7 +107,8 @@ const questionsData = [
       D: "Presentation format"
     },
     correct: "B",
-    explanation: "The slide says the cause must be correctly identified so the best solution can be selected and implemented for sustained results.",
+    explanation_en: "The slide says the cause must be correctly identified so the best solution can be selected and implemented for sustained results.",
+    explanation_ar: "يعتمد حل المشكلات الناجح على التحديد الصحيح لسبب المشكلة (Cause)، وذلك لاختيار الحل الأفضل وتطبيقه لضمان استدامة النتائج.",
     source: "PDF p. 6 — Slide 7"
   },
   {
@@ -113,7 +121,8 @@ const questionsData = [
       D: "Sustain results → select a problem → define a budget"
     },
     correct: "A",
-    explanation: "The diagram presents these four connected stages in this order.",
+    explanation_en: "The diagram presents these four connected stages in this order.",
+    explanation_ar: "دورة حل المشكلات تتكون من 4 مراحل مترابطة بهذا الترتيب: تعريف المشكلة ← تشخيص السبب الجذري ← تحديد وتطبيق الحل ← استدامة النتائج المحققة.",
     source: "PDF p. 6 — Slide 7"
   },
   {
@@ -126,7 +135,8 @@ const questionsData = [
       D: "To replace subject matter experts"
     },
     correct: "A",
-    explanation: "The slide emphasizes stating the problem specifically, separating fact from opinion, and discovering underlying causes.",
+    explanation_en: "The slide emphasizes stating the problem specifically, separating fact from opinion, and discovering underlying causes.",
+    explanation_ar: "يجب التمييز بين الحقائق والآراء للتركيز على المشكلة الواقعية وأسبابها الدفينة بدلاً من الانخداع بالأعراض الظاهرية.",
     source: "PDF p. 7 — Slide 8"
   },
   {
@@ -139,7 +149,8 @@ const questionsData = [
       D: "No one outside the development team"
     },
     correct: "B",
-    explanation: "The slide recommends involving affected workgroups and asking subject matter experts to understand processes and issues.",
+    explanation_en: "The slide recommends involving affected workgroups and asking subject matter experts to understand processes and issues.",
+    explanation_ar: "توصي السلايدات بإشراك كافة مجموعات العمل المتأثرة بالمشكلة والاستعانة بالخبراء المتخصصين (SMEs) لفهم العمليات والمشكلات بعمق.",
     source: "PDF p. 7 — Slide 8"
   },
   {
@@ -152,7 +163,8 @@ const questionsData = [
       D: "Only historical photographs"
     },
     correct: "A",
-    explanation: "The slide explicitly calls for collecting and analyzing both qualitative and quantitative supporting data.",
+    explanation_en: "The slide explicitly calls for collecting and analyzing both qualitative and quantitative supporting data.",
+    explanation_ar: "تؤكد السلايدات بوضوح على جمع وتحليل البيانات الداعمة بنوعيها: البيانات النوعية والكمية (Qualitative and Quantitative Data).",
     source: "PDF p. 7 — Slide 8"
   },
   {
@@ -165,7 +177,8 @@ const questionsData = [
       D: "Replace all data collection"
     },
     correct: "A",
-    explanation: "The slide says to go to the gemba review and document how processes currently work, including who does what and when.",
+    explanation_en: "The slide says to go to the gemba review and document how processes currently work, including who does what and when.",
+    explanation_ar: "مراجعة الجيمبا (Gemba Review) تعني النزول لموقع العمل الفعلي لتوثيق كيفية سير العمليات الحالية على أرض الواقع: من يقوم بماذا وتوقيت ذلك.",
     source: "PDF p. 7 — Slide 8"
   },
   {
@@ -178,7 +191,8 @@ const questionsData = [
       D: "The number of affected products"
     },
     correct: "B",
-    explanation: "The slide defines Where as the point of detection.",
+    explanation_en: "The slide defines Where as the point of detection.",
+    explanation_ar: "في الأسئلة الوصفية لتحليل المشكلة، يشير سؤال 'أين' (Where) إلى نقطة أو مكان اكتشاف المشكلة (Point of detection).",
     source: "PDF p. 8 — Slide 9"
   },
   {
@@ -191,7 +205,8 @@ const questionsData = [
       D: "Who approves the budget"
     },
     correct: "B",
-    explanation: "The slide explicitly says Who is for detection only, not cause.",
+    explanation_en: "The slide explicitly says Who is for detection only, not cause.",
+    explanation_ar: "توضح السلايد بشكل صريح أن سؤال 'من' (Who) يشير إلى من اكتشف المشكلة فقط، ولا يُقصد به البحث عن المتسبب في المشكلة.",
     source: "PDF p. 8 — Slide 9"
   },
   {
@@ -204,7 +219,8 @@ const questionsData = [
       D: "A technique for estimating team size"
     },
     correct: "A",
-    explanation: "This is the definition of RCA given in the lecture.",
+    explanation_en: "This is the definition of RCA given in the lecture.",
+    explanation_ar: "تحليل السبب الجذري (RCA) هو مصطلح شامل للأساليب والأدوات والتقنيات المستخدمة لكشف الأسباب الحقيقية للمشاكل وتوجيه الإجراءات التصحيحية السليمة.",
     source: "PDF p. 9 — Slide 10"
   },
   {
@@ -217,7 +233,8 @@ const questionsData = [
       D: "Which tool? Which team? Which budget?"
     },
     correct: "A",
-    explanation: "The slide identifies repeated Why questions as the 5 Whys technique.",
+    explanation_en: "The slide identifies repeated Why questions as the 5 Whys technique.",
+    explanation_ar: "تقنية 'الـ 5 Whys' تعتمد على تكرار السؤال بـ 'لماذا؟' (Why?) خمس مرات متتالية للتعمق وراء الأعراض والوصول للسبب الجذري.",
     source: "PDF p. 9 — Slide 10"
   },
   {
@@ -230,7 +247,8 @@ const questionsData = [
       D: "Ignore customers and suppliers"
     },
     correct: "B",
-    explanation: "The slide recommends generating several alternatives before choosing one.",
+    explanation_en: "The slide recommends generating several alternatives before choosing one.",
+    explanation_ar: "عند توليد الحلول المحتملة، توصي السلايدات بتأجيل اختيار حل نهائي حتى يتم اقتراح عدة بدائل متنوعة ودراستها بموضوعية.",
     source: "PDF p. 10 — Slide 11"
   },
   {
@@ -243,7 +261,8 @@ const questionsData = [
       D: "They guarantee that no risks exist"
     },
     correct: "A",
-    explanation: "The lecture explains that considering alternatives can enhance the value of the ideal solution.",
+    explanation_en: "The lecture explains that considering alternatives can enhance the value of the ideal solution.",
+    explanation_ar: "تشرح المحاضرة أن طرح ودراسة عدة بدائل وحلول يسهم في تحسين جودة وقيمة الحل المثالي النهائي بشكل ملحوظ.",
     source: "PDF p. 10 — Slide 11"
   },
   {
@@ -256,7 +275,8 @@ const questionsData = [
       D: "Avoid creative thinking"
     },
     correct: "A",
-    explanation: "The slide suggests combining two acceptable solutions into one stronger hybrid solution.",
+    explanation_en: "The slide suggests combining two acceptable solutions into one stronger hybrid solution.",
+    explanation_ar: "تقترح السلايدات دمج فكرتين أو حلين مقبولين معاً لإنتاج حل هجين متكامل وأكثر قوة وفاعلية (Stronger hybrid solution).",
     source: "PDF p. 10 — Slide 11"
   },
   {
@@ -269,7 +289,8 @@ const questionsData = [
       D: "How can monitoring be avoided?"
     },
     correct: "A",
-    explanation: "The slide asks whether the proposed solution addresses the root cause.",
+    explanation_en: "The slide asks whether the proposed solution addresses the root cause.",
+    explanation_ar: "من أهم الأسئلة التي يجب مراعاتها عند تقييم أي حل مقترح: كيف يعالج هذا الحل السبب الجذري للمشكلة؟",
     source: "PDF p. 11 — Slide 12"
   },
   {
@@ -282,7 +303,8 @@ const questionsData = [
       D: "Removing all monitoring activities"
     },
     correct: "A",
-    explanation: "The slide asks about possible problems with the solution and contingency plans.",
+    explanation_en: "The slide asks about possible problems with the solution and contingency plans.",
+    explanation_ar: "خطة الطوارئ (Contingency plan) تهتم بالمشاكل والعقبات المحتمل ظهورها عند تطبيق الحل وكيفية الاستجابة والتعامل معها بنجاح.",
     source: "PDF p. 11 — Slide 12"
   },
   {
@@ -295,7 +317,8 @@ const questionsData = [
       D: "A plan without responsibilities"
     },
     correct: "A",
-    explanation: "The slide says the implementation plan should include details on what, who, and when.",
+    explanation_en: "The slide says the implementation plan should include details on what, who, and when.",
+    explanation_ar: "يصبح تنفيذ الحل أكثر سهولة ونجاحاً بوجود خطة تنفيذ مطورة بعناية تحدد بوضوح: ماذا سيتم إنجازه، ومن المسؤول، والمواعيد الزمنية (What, Who, and When).",
     source: "PDF p. 12 — Slide 14"
   },
   {
@@ -308,7 +331,8 @@ const questionsData = [
       D: "Archived before use"
     },
     correct: "A",
-    explanation: "The plan should define how the change will be measured and how implementation will be monitored.",
+    explanation_en: "The plan should define how the change will be measured and how implementation will be monitored.",
+    explanation_ar: "يجب أن تحدد خطة التنفيذ المحكمة كيفية قياس نجاح الحل (Measured) ومراقبة مؤشرات التطبيق العملي.",
     source: "PDF p. 12 — Slide 14"
   },
   {
@@ -321,7 +345,8 @@ const questionsData = [
       D: "A defined project deliverable"
     },
     correct: "A",
-    explanation: "The slide highlights human factors and the difficulty of remembering new procedures as considerations.",
+    explanation_en: "The slide highlights human factors and the difficulty of remembering new procedures as considerations.",
+    explanation_ar: "من أبرز عوائق التنفيذ: العوامل البشرية التي قد تجعل الموظفين يشعرون بالتهديد من الإجراءات الجديدة أو صعوبة التكيف معها وتذكرها.",
     source: "PDF p. 12 — Slide 14"
   },
   {
@@ -334,7 +359,8 @@ const questionsData = [
       D: "Choosing a goal without actions"
     },
     correct: "A",
-    explanation: "This is the definition of planning shown in the lecture.",
+    explanation_en: "This is the definition of planning shown in the lecture.",
+    explanation_ar: "التخطيط (Planning) يُعرف في المحاضرة بأنه تنظيم أجزاء المعرفة في تسلسل متسق ومترابط من الإجراءات والخطوات لتحقيق هدف معين.",
     source: "PDF p. 13 — Slide 16"
   },
   {
@@ -347,7 +373,8 @@ const questionsData = [
       D: "A final state without actions"
     },
     correct: "A",
-    explanation: "The slide explains that a planner finds an action sequence to accomplish a specific task.",
+    explanation_en: "The slide explains that a planner finds an action sequence to accomplish a specific task.",
+    explanation_ar: "مهمة المخطط (Planner) هي إيجاد تسلسل من الإجراءات والعمليات التي تتيح للنظام إنجاز مهمة محددة والانتقال من الحالة الحالية إلى حالة الهدف.",
     source: "PDF p. 13 — Slide 16"
   },
   {
@@ -360,7 +387,8 @@ const questionsData = [
       D: "It avoids solution procedures"
     },
     correct: "A",
-    explanation: "The lecture directly links traditional planning’s knowledge-intensive nature to organizing knowledge and partial plans.",
+    explanation_en: "The lecture directly links traditional planning’s knowledge-intensive nature to organizing knowledge and partial plans.",
+    explanation_ar: "يوصف التخطيط التقليدي بأنه كثيف المعرفة (Knowledge-intensive) لأن بناء الخطة يتطلب دمج وتنظيم المعارف والخطط الجزئية لتكوين إجراء حل متكامل.",
     source: "PDF p. 13 — Slide 16"
   },
   {
@@ -373,7 +401,8 @@ const questionsData = [
       D: "Audio recording only"
     },
     correct: "A",
-    explanation: "The slide mentions manufacturing applications such as process control and designing a robot controller.",
+    explanation_en: "The slide mentions manufacturing applications such as process control and designing a robot controller.",
+    explanation_ar: "ذكرت السلايدات تطبيقات التخطيط في المجال الصناعي مثل: التحكم في عمليات التصنيع (Process control) وتصميم متحكمات الروبوت الذكية.",
     source: "PDF p. 13 — Slide 16"
   },
   {
@@ -386,7 +415,8 @@ const questionsData = [
       D: "Return to the original location"
     },
     correct: "B",
-    explanation: "The listed sequence starts by putting down whatever is currently held.",
+    explanation_en: "The listed sequence starts by putting down whatever is currently held.",
+    explanation_ar: "في مثال تخطيط الكتل، يبدأ تسلسل العمليات بإنزال أي شيء ممسوك في اليد حالياً (Put down whatever is now held) لتفريغ القابض.",
     source: "PDF p. 14 — Slide 17"
   },
   {
@@ -399,7 +429,8 @@ const questionsData = [
       D: "Visual labels"
     },
     correct: "A",
-    explanation: "The lecture states that the steps of a traditional robot are composed of atomic actions.",
+    explanation_en: "The lecture states that the steps of a traditional robot are composed of atomic actions.",
+    explanation_ar: "تتكون تصرفات الروبوت التقليدي من إجراءات ذرية أساسية (Atomic actions) لا يمكن تجزئتها لأبسط منها.",
     source: "PDF p. 15 — Slide 18"
   },
   {
@@ -412,7 +443,8 @@ const questionsData = [
       D: "Only the final goal state"
     },
     correct: "A",
-    explanation: "The slide says plans are created by searching possible actions until the required sequence is discovered.",
+    explanation_en: "The slide says plans are created by searching possible actions until the required sequence is discovered.",
+    explanation_ar: "يتم بناء الخطط بالبحث والتقصي داخل فضاء من الإجراءات والعمليات الممكنة (Space of possible actions) حتى الوصول للتسلسل المطلوب.",
     source: "PDF p. 15 — Slide 18"
   },
   {
@@ -425,7 +457,8 @@ const questionsData = [
       D: "All possible actions are removed"
     },
     correct: "A",
-    explanation: "The lecture says search terminates when the goal state, the appropriate description of the world, is produced.",
+    explanation_en: "The lecture says search terminates when the goal state, the appropriate description of the world, is produced.",
+    explanation_ar: "تنتهي عملية البحث عن الخطة بنجاح عند الوصول إلى حالة الهدف المنشودة (Goal state) وتوليد التوصيف الصحيح للعالم المطلوب.",
     source: "PDF p. 15 — Slide 18"
   },
   {
@@ -438,7 +471,8 @@ const questionsData = [
       D: "A communication protocol"
     },
     correct: "A",
-    explanation: "The slide explicitly says planning may be seen as a state-space search.",
+    explanation_en: "The slide explicitly says planning may be seen as a state-space search.",
+    explanation_ar: "توضح السلايد صراحةً أنه يمكن اعتبار التخطيط التقليدي بمثابة عملية بحث في فضاء الحالات (State-space search).",
     source: "PDF p. 16 — Slide 19"
   },
   {
@@ -451,7 +485,8 @@ const questionsData = [
       D: "Any block even if covered"
     },
     correct: "A",
-    explanation: "The lecture says the gripper can grasp any clear block and move it to any tabletop location or onto another clear block.",
+    explanation_en: "The lecture says the gripper can grasp any clear block and move it to any tabletop location or onto another clear block.",
+    explanation_ar: "في مثال عالم الكتل (Blocks-world)، يمكن لذراع الروبوت نقل أي كتلة حرة وغير مغطاة (Clear) إلى أي موضع على الطاولة أو فوق كتلة حرة أخرى.",
     source: "PDF p. 18 — Slide 20"
   },
   {
@@ -464,7 +499,8 @@ const questionsData = [
       D: "unstack(U,V)"
     },
     correct: "B",
-    explanation: "The task table defines pickup(W) as picking up block W from its current location.",
+    explanation_en: "The task table defines pickup(W) as picking up block W from its current location.",
+    explanation_ar: "يُعرّف جدول المهام المعامل pickup(W) بأنه التقاط الكتلة W ورفعها من موقعها الحالي.",
     source: "PDF p. 19 — Slide 21"
   },
   {
@@ -477,7 +513,8 @@ const questionsData = [
       D: "unstack(U,V)"
     },
     correct: "C",
-    explanation: "The task table defines stack(U,V) as placing U on top of V.",
+    explanation_en: "The task table defines stack(U,V) as placing U on top of V.",
+    explanation_ar: "المعامل stack(U,V) يرمز لعملية وضع الكتلة U مباشرة فوق الكتلة V.",
     source: "PDF p. 19 — Slide 21"
   },
   {
@@ -490,7 +527,8 @@ const questionsData = [
       D: "Block X is at coordinates X, Y, Z"
     },
     correct: "B",
-    explanation: "The predicate list defines clear(X) as having nothing on top of block X.",
+    explanation_en: "The predicate list defines clear(X) as having nothing on top of block X.",
+    explanation_ar: "الدالة المنطقية clear(X) تعني أن الكتلة X حرة ولا يوجد أي مجسم فوقها، وبالتالي يمكن حملها أو البناء فوقها.",
     source: "PDF p. 20 — Slide 22"
   },
   {
@@ -503,7 +541,8 @@ const questionsData = [
       D: "Block X is clear"
     },
     correct: "B",
-    explanation: "The slide defines gripping() as the robot gripper being empty; gripping(X) means it is holding block X.",
+    explanation_en: "The slide defines gripping() as the robot gripper being empty; gripping(X) means it is holding block X.",
+    explanation_ar: "توضح السلايد أن الدالة ()gripping بدون معطيات تعني أن ملقط الروبوت فارغ؛ أما gripping(X) فتعني أنه يحمل الكتلة X.",
     source: "PDF p. 20 — Slide 22"
   },
   {
@@ -516,7 +555,8 @@ const questionsData = [
       D: "Standard Research Information Processing System"
     },
     correct: "A",
-    explanation: "The slide expands STRIPS as Stanford Research Institute Planning System.",
+    explanation_en: "The slide expands STRIPS as Stanford Research Institute Planning System.",
+    explanation_ar: "اختصار STRIPS يشير إلى نظام التخطيط الشهير لمعهد ستانفورد للأبحاث (Stanford Research Institute Planning System).",
     source: "PDF p. 21 — Slide 23"
   },
   {
@@ -529,7 +569,8 @@ const questionsData = [
       D: "Goal list"
     },
     correct: "C",
-    explanation: "The first element is the preconditions (P), which must be satisfied before applying an operator.",
+    explanation_en: "The first element is the preconditions (P), which must be satisfied before applying an operator.",
+    explanation_ar: "العنصر الأول في وصف أي معامل بنظام STRIPS هو قائمة الشروط المسبقة (Preconditions - P) التي يلزم تحققها قبل تطبيق المعامل.",
     source: "PDF p. 22 — Slide 24"
   },
   {
@@ -542,7 +583,8 @@ const questionsData = [
       D: "Actions that must never be used"
     },
     correct: "B",
-    explanation: "The add list (A) contains additions to the state description after applying the operator.",
+    explanation_en: "The add list (A) contains additions to the state description after applying the operator.",
+    explanation_ar: "قائمة الإضافة (Add list - A) في STRIPS تحتوي على الحالات والوقائع الجديدة التي تضاف لوصف الحالة بعد تنفيذ المعامل بنجاح.",
     source: "PDF p. 22 — Slide 24"
   },
   {
@@ -555,7 +597,8 @@ const questionsData = [
       D: "The final goal only"
     },
     correct: "A",
-    explanation: "The delete list (D) contains items removed from the state description when the operator is applied.",
+    explanation_en: "The delete list (D) contains items removed from the state description when the operator is applied.",
+    explanation_ar: "قائمة الحذف (Delete list - D) تحتوي على الحقائق والحالات التي تلغى وتُحذف من وصف الحالة بعد تطبيق المعامل.",
     source: "PDF p. 22 — Slide 24"
   },
   {
@@ -568,7 +611,8 @@ const questionsData = [
       D: "push, pull, open, close"
     },
     correct: "B",
-    explanation: "The lecture identifies pickup, putdown, stack, and unstack as the four operators.",
+    explanation_en: "The lecture identifies pickup, putdown, stack, and unstack as the four operators.",
+    explanation_ar: "تحدد المحاضرة المعاملات الأربعة الأساسية في عالم الكتل وهي: الالتقاط، الإنزال، التكديس، وفك التكديس (pickup, putdown, stack, unstack).",
     source: "PDF p. 21 and p. 23 — Slides 23 and 25"
   },
   {
@@ -581,7 +625,8 @@ const questionsData = [
       D: "The same as implementing a solution without evaluation"
     },
     correct: "A",
-    explanation: "The slide defines decision-making as a systematic approach involving alternatives, information, and evaluation.",
+    explanation_en: "The slide defines decision-making as a systematic approach involving alternatives, information, and evaluation.",
+    explanation_ar: "تُعرّف السلايد عملية اتخاذ القرار بأنها منهج منظم ومنطقي لاختيار أفضل مسار عمل من بين عدة بدائل متاحة بناءً على تحليل المعلومات والتقييم.",
     source: "PDF p. 24 — Slide 26"
   },
   {
@@ -594,7 +639,8 @@ const questionsData = [
       D: "Team seniority only"
     },
     correct: "A",
-    explanation: "The lecture lists feasibility, risk, and impact as criteria for evaluating potential solutions.",
+    explanation_en: "The lecture lists feasibility, risk, and impact as criteria for evaluating potential solutions.",
+    explanation_ar: "حددت المحاضرة 3 معايير رئيسية لتقييم الحلول المقترحة: قابلية التنفيذ والجدوى (Feasibility)، والمخاطر المحتملة (Risk)، والأثر الإيجابي المتوقع (Impact).",
     source: "PDF p. 24 — Slide 26"
   },
   {
@@ -607,7 +653,8 @@ const questionsData = [
       D: "Public speaking only"
     },
     correct: "A",
-    explanation: "Adaptability is included in the list of key problem-solving skills.",
+    explanation_en: "Adaptability is included in the list of key problem-solving skills.",
+    explanation_ar: "تعد مهارة التكيف والمرونة (Adaptability) من أبرز المهارات الأساسية لحل المشكلات المذكورة في قائمة المحاضرة.",
     source: "PDF p. 26 — Slide 28"
   },
   {
@@ -620,7 +667,8 @@ const questionsData = [
       D: "Network Routing"
     },
     correct: "A",
-    explanation: "Risk Assessment appears in the lecture’s decision-making skills list.",
+    explanation_en: "Risk Assessment appears in the lecture’s decision-making skills list.",
+    explanation_ar: "يعد تقييم المخاطر (Risk Assessment) إحدى المهارات الجوهرية لاتخاذ القرارات الصائبة في بيئات العمل.",
     source: "PDF p. 25 — Slide 27"
   },
   {
@@ -633,7 +681,8 @@ const questionsData = [
       D: "Identify alternatives → take action → weigh evidence → define the problem"
     },
     correct: "B",
-    explanation: "This sequence follows all seven steps listed in the lecture.",
+    explanation_en: "This sequence follows all seven steps listed in the lecture.",
+    explanation_ar: "الترتيب الصحيح لخطوات عملية اتخاذ القرار السبع كما ورد في المحاضرة: تحديد المشكلة ← جمع المعلومات ← تحديد البدائل ← وزن الأدلة ← اختيار البديل ← التنفيذ ← المراجعة والتقييم.",
     source: "PDF p. 27 — Slide 30"
   },
   {
@@ -646,7 +695,8 @@ const questionsData = [
       D: "Monitor → define → select → ignore"
     },
     correct: "A",
-    explanation: "The slide lists these seven stages in this order.",
+    explanation_en: "The slide lists these seven stages in this order.",
+    explanation_ar: "المراحل السبع لعملية حل المشكلات مرتبة كما جاءت بالسلايد: التعريف ← التحليل ← توليد الحلول ← التقييم والاختيار ← التنفيذ ← المراقبة والتقييم ← التأمل والتعلّم المستمر.",
     source: "PDF p. 28 — Slide 31"
   }
 ];

@@ -51,7 +51,8 @@
     explanationBox: document.getElementById('explanationBox'),
     expStatusIcon: document.getElementById('expStatusIcon'),
     expTitle: document.getElementById('expTitle'),
-    expWhyText: document.getElementById('expWhyText'),
+    expWhyArText: document.getElementById('expWhyArText'),
+    expWhyEnText: document.getElementById('expWhyEnText'),
     expSourceText: document.getElementById('expSourceText'),
     
     // Navigation Buttons
@@ -263,7 +264,8 @@
       elements.expTitle.textContent = isCorrect 
         ? `إجابة صحيحة! (الإجابة: ${q.correct})` 
         : `إجابة غير صحيحة! (الإجابة الصحيحة هي: ${q.correct})`;
-      elements.expWhyText.textContent = q.explanation;
+      elements.expWhyArText.textContent = q.explanation_ar;
+      elements.expWhyEnText.textContent = q.explanation_en;
       elements.expSourceText.textContent = q.source;
     } else {
       elements.explanationBox.style.display = 'none';
@@ -491,10 +493,11 @@
 
       if (query) {
         const inQ = q.question.toLowerCase().includes(query);
-        const inExp = q.explanation.toLowerCase().includes(query);
+        const inExpEn = (q.explanation_en || '').toLowerCase().includes(query);
+        const inExpAr = (q.explanation_ar || '').toLowerCase().includes(query);
         const inSrc = q.source.toLowerCase().includes(query);
         const inOpts = Object.values(q.options).some(o => o.toLowerCase().includes(query));
-        return inQ || inExp || inSrc || inOpts;
+        return inQ || inExpEn || inExpAr || inSrc || inOpts;
       }
       return true;
     });
@@ -526,8 +529,13 @@
         </div>
         <div class="review-q-text">${q.question}</div>
         <div class="review-options-list">${optionsHtml}</div>
-        <div class="review-exp">
-          <strong>💡 الشرح (Why?):</strong> ${q.explanation}
+        <div class="review-exp-block">
+          <div class="review-exp-ar">
+            <strong>🇸🇦 الشرح بالعربية:</strong> ${q.explanation_ar}
+          </div>
+          <div class="review-exp-en">
+            <strong>🇬🇧 Why? (English):</strong> ${q.explanation_en}
+          </div>
         </div>
       `;
       elements.reviewCardsList.appendChild(card);
